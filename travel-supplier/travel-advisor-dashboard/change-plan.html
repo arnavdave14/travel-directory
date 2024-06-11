@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Travel Advisor</title>
+   <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="./css/bootstrap.css">
+   <link rel="stylesheet" href="./css/master.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+   <div class="mainLayout">
+      <header>
+         <nav class="navbar navbar-expand-lg">
+            <div class="container">
+               <div class="header-nav">
+                  <a class="navbar-brand" href="./index.html">
+                     <img src="./img/logo.png" alt="">
+                  </a>
+
+                  <div class="navigation-container">
+                     <div class="navigation">
+                        <button type="button" class="ThemeBtn sidebar-openBtn d-lg-none" onclick="toggleSidebar()">Open Sidebar</button>
+                        <button class="navbar-toggler ToggleButton" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#sideaNav" aria-controls="sideaNav" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                           <div class="nav-overlay" data-bs-toggle="collapse" data-bs-target="#sideaNav"></div>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="sideaNav">
+                           <a href="index.html" class="sidenav-logo d-lg-none">
+                              <img src="./img/logo.png" alt="">
+                           </a>
+                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                 <a class="nav-link" aria-current="page" href="https://devfolio.co.in/Travel-Advisor/">
+                                    Home
+                                 </a>
+                              </li>
+
+                              <li class="nav-item">
+                                 <a class="nav-link" href="https://devfolio.co.in/Travel-Advisor/advisor-listing.html">
+                                    Find A Travel Pro
+                                 </a>
+                              </li>
+
+                              <li class="nav-item">
+                                 <a class="nav-link" href="https://devfolio.co.in/Travel-Advisor/advisor-destination.html">
+                                    Destinations
+                                 </a>
+                              </li>
+
+                              <li class="nav-item">
+                                 <a class="nav-link" href="https://devfolio.co.in/Travel-Advisor/advisor-styles.html">
+                                    Styles
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="https://devfolio.co.in/Travel-Advisor/supplier-listing.html">
+                                    Suppliers
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="https://devfolio.co.in/Travel-Advisor/events.html">
+                                    Insights
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="https://devfolio.co.in/Travel-Advisor/advisor-faq.html">
+                                    FAQS
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <main>
+         <div class="dashboardLayout">
+            <div class="sidebar" id="sidebar">
+               <div class="dashProfile">
+                  <div class="profileImg">
+                     <img src="./img/profile-img.png" alt="">
+                     <span class="circle-cut"></span>
+                  </div>
+                  <h6>Robert Grant</h6>
+                  <div class="rating-chip">
+                     <span>4.5</span>
+                     <i class="material-icons">star</i>
+                  </div>
+               </div>
+
+               <ul class="sidebar-navs">
+                  <li><a href="./index.html">Dashboard</a></li>
+                  <li><a href="./my-suppliers.html">My Suppliers</a></li>
+                  <li><a href="./supplier-list.html">Supplier List</a></li>
+                  <li><a href="./plans.html" class="active">Plans</a></li>
+                  <li><a href="./account-info.html">Account Info</a></li>
+                  <li><a href="./blog.html">Blogs</a></li>
+               </ul>
+
+               <div class="CommunityBlock">
+                  <ul class="logout-settings">
+                     <li>
+                        <button data-bs-toggle="modal" data-bs-target="#SettingModal">
+                           <i class="material-icons">settings</i>
+                           Settings
+                        </button>
+                     </li>
+
+                     <li>
+                        <a href="https://devfolio.co.in/Travel-Advisor/">
+                           <i class="material-icons">logout</i>
+                           Logout
+                        </a>
+                     </li>
+                  </ul>
+
+                  <div class="CommunityInfo">
+                     <img src="./img/community-img.png" alt="">
+                     <h6>Join Our Community</h6>
+                  </div>
+               </div>
+            </div>
+            <div class="nav-overlay" onclick="toggleSidebar()"></div>
+
+            <div class="content-body">
+               <div class="pageTilte">
+                  <h2>Choose Travel Pro Plans 
+                     <span>Only people who live with you may use your account</span>
+                  </h2>
+
+                  <a href="./plans.html" class="ThemeBtn btn-sm">
+                     <i class="material-icons">west</i>
+                     Back to Plan
+                  </a>
+               </div>
+
+               <div class="row">
+                  <div class="col-lg-12">
+                     <ul class="nav nav-tabs" id="PlanTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="monthlyTab" data-bs-toggle="tab" data-bs-target="#monthly" type="button" role="tab" aria-controls="monthly" aria-selected="true">Monthly</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="yearlyTab" data-bs-toggle="tab" data-bs-target="#yearly" type="button" role="tab" aria-controls="yearly" aria-selected="false">Yearly</button>
+                        </li>
+
+                        <li class="offerPlan-tagLine">
+                           <i class="material-icons">campaign</i>
+                           Save 25% on Annual Plan
+                        </li>
+                      </ul>
+
+                      <div class="tab-content" id="PlanTabContent">
+                        <div class="tab-pane fade show active" id="monthly" role="tabpanel" aria-labelledby="monthlyTab">
+                           <div class="row gy-4">
+                              <div class="col-lg-4">
+                                 <div class="card h-100">
+                                    <div class="card-header planHead">
+                                       <img src="./img/pricing-icon.svg" alt="">
+                                       <div class="pricingText">
+                                          <h3>Basic Plan</h3>
+                                          <p>Starter Plan</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="card-body planContent">
+                                       <ul>
+                                          <li class="TopBullet">Free Listing</li>
+                                          <li>
+                                             Travel Partner Directory
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Events Directory
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Travel Partner Blog
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+                                       </ul>
+
+                                       <div class="getPlan">
+                                          <div class="planPrice">
+                                             <h2>FREE</h2>
+                                             <p>Pro for individuals</p>
+                                          </div>
+                                          <button type="button" class="ThemeBtn">Get Started</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-4">
+                                 <div class="card h-100">
+                                    <div class="card-header planHead">
+                                       <img src="./img/pricing-icon.svg" alt="">
+                                       <div class="pricingText">
+                                          <h3>Standard Plan</h3>
+                                          <p>For the best results</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="card-body planContent">
+                                       <ul>
+                                          <li class="TopBullet">Includes everything from Basic plus</li>
+                                          <li>
+                                             Listed in Advisor Directory
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Generic Inquiry Form & Contact Info
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Social Links
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Professional Biography
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Promotional Area
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Certifications & Accreditations
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Engage Reviews
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             <p>Appeal Reviews for a fee 
+                                                <span>(max of 8 per year)</span>
+                                             </p>
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+                                       </ul>
+
+                                       <div class="getPlan">
+                                          <div class="planPrice">
+                                             <h2>$7.99</h2>
+                                             <p>Paid Monthly</p>
+                                          </div>
+                                          <button type="button" class="ThemeBtn">Get Started</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-4">
+                                 <div class="card h-100">
+                                    <div class="card-header planHead PremiumPlanHead">
+                                       <img src="./img/pricing-icon.svg" alt="">
+                                       <div class="pricingText">
+                                          <h3>Premium Plan</h3>
+                                          <p>Most Popular</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="card-body planContent">
+                                       <ul>
+                                          <li class="TopBullet">Includes everything from Standard plus</li>
+                                          <li>
+                                             Travel Highlights
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Additional Profiles
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Travel Journal
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Asked & Answered
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Custom Button or Custom Form Link
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+                                       </ul>
+
+                                       <div class="getPlan">
+                                          <div class="planPrice">
+                                             <h2>$14.99</h2>
+                                             <p>Paid Monthly</p>
+                                          </div>
+                                          <button type="button" class="ThemeBtn">Get Started</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearlyTab">
+                           <div class="row gy-4">
+                              <div class="col-lg-4">
+                                 <div class="card h-100">
+                                    <div class="card-header planHead">
+                                       <img src="./img/pricing-icon.svg" alt="">
+                                       <div class="pricingText">
+                                          <h3>Basic Plan</h3>
+                                          <p>Starter Plan</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="card-body planContent">
+                                       <ul>
+                                          <li class="TopBullet">Free Listing</li>
+                                          <li>
+                                             Travel Partner Directory
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Events Directory
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Travel Partner Blog
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+                                       </ul>
+
+                                       <div class="getPlan">
+                                          <div class="planPrice">
+                                             <h2>FREE</h2>
+                                             <p>Pro for individuals</p>
+                                          </div>
+                                          <button type="button" class="ThemeBtn">Get Started</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-4">
+                                 <div class="card h-100">
+                                    <div class="card-header planHead">
+                                       <img src="./img/pricing-icon.svg" alt="">
+                                       <div class="pricingText">
+                                          <h3>Standard Plan</h3>
+                                          <p>For the best results</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="card-body planContent">
+                                       <ul>
+                                          <li class="TopBullet">Includes everything from Basic plus</li>
+                                          <li>
+                                             Listed in Advisor Directory
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Generic Inquiry Form & Contact Info
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Social Links
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Professional Biography
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Promotional Area
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Certifications & Accreditations
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Engage Reviews
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             <p>Appeal Reviews for a fee 
+                                                <span>(max of 8 per year)</span>
+                                             </p>
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+                                       </ul>
+
+                                       <div class="getPlan">
+                                          <div class="planPrice">
+                                             <h2>$5.99</h2>
+                                             <p>Paid Annually</p>
+                                          </div>
+                                          <button type="button" class="ThemeBtn">Get Started</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-4">
+                                 <div class="card h-100">
+                                    <div class="card-header planHead PremiumPlanHead">
+                                       <img src="./img/pricing-icon.svg" alt="">
+                                       <div class="pricingText">
+                                          <h3>Premium Plan</h3>
+                                          <p>Most Popular</p>
+                                       </div>
+                                    </div>
+
+                                    <div class="card-body planContent">
+                                       <ul>
+                                          <li class="TopBullet">Includes everything from Standard plus</li>
+                                          <li>
+                                             Travel Highlights
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Additional Profiles
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Travel Journal
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Asked & Answered
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+
+                                          <li>
+                                             Custom Button or Custom Form Link
+                                             <img src="./img/question-icon.svg" alt="">
+                                          </li>
+                                       </ul>
+
+                                       <div class="getPlan">
+                                          <div class="planPrice">
+                                             <h2>$10.99</h2>
+                                             <p>Paid Annually</p>
+                                          </div>
+                                          <button type="button" class="ThemeBtn">Get Started</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>   
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <footer>
+         <div class="container">
+            <div class="footer-navrow">
+               <div class="footer-navBlock">
+                  <h6>Quick Links</h6>
+                  <ul>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/login-advisor.html">Travel Pro Login</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing.html">Find A Travel Pro</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-destination.html">Destinations</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-styles.html">Styles</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/events.html">Insights</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-navBlock">
+                  <h6>Our Company</h6>
+                  <ul>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/report-us.html">Report a Problem</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/blog.html">Travel Blogs</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/privacy-advisor.html">Privacy Policy</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/terms-advisor.html">Terms And Conditions</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-faq.html">FAQ's</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-navBlock">
+                  <h6>Top Cities</h6>
+                  <ul>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Manhattan</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Los Angeles</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Houston</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Chicago</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-navBlock">
+                  <h6>Categories</h6>
+                  <ul>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Cafe</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Food Restaurant</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Museum Art</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Shopping Mall</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-navBlock">
+                  <h6>Top Styles</h6>
+                  <ul>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Manhattan</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Los Angeles</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Houston</a></li>
+                     <li><a href="https://devfolio.co.in/Travel-Advisor/advisor-listing-inner.html">Chicago</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="brandCopyright">
+            <div class="container">
+               <div class="CopyRight-Info">
+                  <img src="./img/logo.png" alt="">
+                  <p>© Copyright Travel Advisor Resource Center (TARC) 2024</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+
+   <button id="scrollTotop">
+      <div class="ScrollArrow">
+         <i class="material-icons">expand_less</i>
+      </div>
+   </button>
+
+   <!-- Modal -->
+   <div class="modal fade" id="SettingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="SettingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Change Password</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row gy-4">
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <label>Old Password</label>
+                        <input type="text" name="" id="" class="form-control">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <label>New Password</label>
+                        <input type="text" name="" id="" class="form-control">
+                        <div class="passwordIndicator-block">
+                           <div class="password-indicator">
+                              <span class="active"></span>
+                              <span></span>
+                              <span></span>
+                           </div>
+                           <p>Weak</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="text" name="" id="" class="form-control">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <button type="button" class="ThemeBtn">Save Password</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+   <script src="./js/bootstrap.js"></script>
+   <script src="./js/main.js"></script>
+
+</body>
+
+</html>

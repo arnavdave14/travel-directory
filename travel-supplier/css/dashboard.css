@@ -1,0 +1,128 @@
+section.dashboard-home {
+    margin-top: 80px;
+}
+
+.h-dash{
+    height: 90vh;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 70px;
+    gap: 5px;
+    justify-content: center;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50px;
+    border: 1px solid #efefef;
+    padding: 3px 10px;
+    font-weight: 500;
+}
+
+.star-rating span {
+    color: #FFCB45;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 80px;
+    border-radius: 50%;
+    border: 2px solid #efefef;
+}
+
+ul.dash-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+ul.dash-nav li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+ul.dash-nav li.active a {
+    color: var(--clr-primary);
+    font-weight: 600;
+}
+
+.footer-btns a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 0 10px;
+}
+
+.dashboard-side {
+    height: 100%;
+    border-right: 1px solid #efefef;
+}
+
+.dash.card .card-body {
+    padding: 1rem 1rem;
+}
+
+.card.dash {
+    border-radius: 10px;
+    box-shadow: none;
+    border: 2px solid #efefef;
+}
+
+.dash-head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 0 10px;
+}
+
+.dash-head h3,.dash-head h6 {
+    font-weight: 500;
+}
+
+.dash-head h3 {
+    font-size: 35px;
+    color: var(--clr-primary);
+}
+
+.dash-head h6 {
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.card-body.dash p {
+    font-size: 20px;
+    color: var(--clr-primary);
+}
+
+.card-body.dash span {
+    width: 100%;
+    text-align: end;
+    font-size: 130px;
+    color: var(--clr-primary);
+    opacity: 0.5;
+}
+
+.card-body.dash {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

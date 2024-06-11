@@ -1,0 +1,232 @@
+.left-side-div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    z-index: 0;
+    padding-left: 50px;
+    color: #fff;
+}
+
+
+  .left-side-div:before {
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 26, 34, 1) 0%, rgba(0, 75, 97, 1) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    z-index: -1;
+}
+
+.step-no {
+    background: #ffffff30;
+    max-width: 40px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 5px;
+    position: relative;
+    border: 1px dashed #ffffff91;
+    transition: all 0.5s ease-in-out;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    
+}
+
+
+.step-no:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    border-left: 1px dashed;
+    bottom: -40px;
+}
+
+.active .step-no {
+    background: #ffffff;
+    color: var(--clr-primary);
+}
+
+.active .step-no:after{
+    border-color: #fff;
+}
+
+.step-no.last::after{
+    display: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    margin-right: 100px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100px;
+}
+form.login-form{
+    width: 100%;
+    max-width: 680px;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 1px solid #efefef;
+}
+
+
+
+form.login-form .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #004b61;
+}
+.form h3  {
+    color: #018390;
+}
+
+.form-field{
+    font-size: 16px;
+    font-weight: 400;
+    color: #018390;
+}
+
+
+.form-field input {
+    font-size: 16px;
+    padding: 9px 0px;
+    border: none;
+    border-bottom:1px solid black;
+    border-radius: 0;
+    color: #018390;
+}
+
+.form-text{
+    display:flex;
+    gap:10px;
+    align-items: center;
+    color: #018390;
+    font-size:16px;
+
+}
+
+.form-text span{
+    width: 5%;
+    background: #efefef;
+    height:5px;
+} 
+
+.form-text span:first-child{
+    background: #018390;
+}
+
+.login-form p{
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+p.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: #004B61;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 630px;
+}
+
+p.footer-text span {
+    font-weight: 600;
+}
+
+@media (max-width:1180px){
+
+}
+
+@media (max-width: 991.98px) {
+
+    .login-response{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .btn-div-row {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 320px) {}
+
+
+
+
+
+
+/* custome css */
+
+
+
+.checkbox-div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-check .form-check-input{
+    border: 0.2px solid rgba(0, 0, 0, 0.466);
+}
+
+.checkbox-div .form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-check-input:checked{
+    background-color: var(--clr-primary);
+    border-color: var(--clr-primary);
+}
+
+.form-check-input:focus {
+    border-color: #efefef;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-div-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-div-row .ThemeBtn{
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .form-row .form-field {
+    width: 100%;
+  }

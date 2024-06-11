@@ -1,0 +1,593 @@
+/* dashboard page */
+.pageTilte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageTilte h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.pageTilte h2 span {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.EditBtn span {
+    font-size: 15px;
+}
+
+.LinkCard {
+    padding: 15px;
+    border: 1px solid #EFEFEF;
+    border-radius: 15px;
+}
+
+.right-icon {
+    text-align: right;
+}
+
+.right-icon h2 {
+    font-weight: bold;
+    color: var(--clr-primary);
+    margin: 0;
+}
+
+.right-icon h5 {
+    font-size: 40px;
+    color: var(--clr-primary);
+}
+
+.right-icon p {
+    font-size: 14px;
+    color: var(--clr-primary);
+    font-weight: 600;
+}
+
+.LinkCard .right-icon h6 {
+    color: var(--clr-primary);
+    margin: 0;
+}
+
+.LinkCard img {
+    width: 60px;
+    opacity: 0.3;
+}
+
+.LinkCard h6 {
+    font-size: 16px;
+    color: var(--clr-primary);
+    font-weight: 400;
+}
+
+.headline-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 0 20px;
+}
+
+.headline-info li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.headline-info li:before {
+    content: '';
+    display: inline-flex;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    background: #004b61;
+    border-radius: 100%;
+}
+
+#ProfileViews-Chart {
+    width: 100%;
+    height: 250px;
+}
+
+.userEnquiry-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.EnquiryGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.EnquiryList {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.enqCount {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: 1px solid #004b61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.enqCount h6 {
+    font-size: 16px;
+    margin: 0;
+    color: #004B61;
+    font-weight: bold;
+}
+
+.enqDetails h6 {
+    font-size: 16px;
+}
+
+.callDate-info {
+    display: flex;
+    gap: 15px;
+}
+
+.callDate-info li,
+.callDate-info li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: normal;
+}
+
+.callDate-info li i {
+    font-size: 16px;
+}
+
+.callDate-info li span {
+    color: #018390;
+    font-size: 12px;
+}
+
+.viewEnquiry {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.EnquiryContainer {
+    max-height: 600px;
+    overflow: auto;
+}
+
+.addsInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    /* min-height: 250px; */
+}
+
+.addsInfo h6 {
+    margin: 0;
+    font-size: 24px;
+    color: #004b61;
+    text-transform: capitalize;
+}
+
+.addsInfo p {
+    margin: 0;
+}
+
+
+/* My Supplier */
+
+.SupplierCard {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.SupplierThumb {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.SupplierThumb img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.SupplierDetails {
+    padding: 20px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.SupplierDetails h6 {
+    font-size: 16px;
+    margin: 0;
+    color: var(--clr-primary);
+}
+
+.SupplierDetails p {
+    font-size: 13px;
+    color: #b1b1b1;
+    margin: 0;
+}
+
+.SupplierDetails p span {
+    color: var(--clr-primary);
+}
+
+.SupplierInfo {
+    margin-top: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.SupplierInfo h6 {
+    font-size: 14px;
+}
+
+.SupplierInfo:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    background: var(--clr-primary);
+    top: 5px;
+    left: 0;
+}
+
+.chip-QR {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -36px 0 15px;
+}
+
+.status-chip {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    background: #fff;
+    color: var(--clr-primary);
+}
+
+.status-chip i {
+    font-size: 14px;
+}
+
+.status-chip span {
+    font-size: 12px;
+}
+
+.chip-QR i.qr {
+    font-size: 24px;
+    color: var(--clr-primary);
+    border: 1px solid;
+    background: #fff;
+}
+
+/* My Supplier end*/
+
+
+/* account-info */
+
+.ProfileBox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ProfileInfos h4,
+.ProfileInfos p {
+    color: var(--clr-primary);
+}
+
+ul.UserDetails {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+ul.UserDetails span {
+    font-size: 16px;
+}
+
+.FormLabels label {
+    /* font-weight: 600; */
+    color: var(--clr-dark);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* account-info-end */
+
+/* Blogs  */
+
+.BlogImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.BlogImg {
+    width: 70px;
+    height: 44px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#SocialMediaChart {
+    width: 100%;
+    height: 350px;
+}
+
+.ImgUplaod {
+    min-height: 200px;
+    padding: 20px;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.ImgUplaod label p {
+    font-size: 20px;
+    color: #E2E2E2;
+    margin: 0;
+}
+
+.ImgUplaod label {
+    border: 1px dashed #EFEFEF;
+    height: 200px;
+    width: 400px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ImgUplaod input {
+    display: none;
+}
+
+.f-12 {
+    font-size: 12px !important;
+}
+
+.Passbar {
+    width: 30px;
+    display: block;
+    height: 2px;
+    background: #ddd;
+}
+
+.PassStep {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.PasswordProcess {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.form-check label {
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
+    margin: 0;
+}
+
+span.Fillbar {
+    background: var(--clr-primary);
+}
+
+.CommentsBox {
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.CommentsBg {
+    height: 120px;
+    position: relative;
+}
+
+.CommentsBg:after {
+    content: '';
+    background: rgb(0 75 97 / 50%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.CommentsBg img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+}
+
+.UserImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.UserImg {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    bottom: 30px;
+}
+
+.UserMeta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0px 20px;
+}
+
+.UserName h4 {
+    margin: 0;
+}
+
+.UserName span {
+    font-size: 16px;
+    color: #DFB300;
+}
+.UserName p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.Disption p {
+    margin: 0;
+    font-size: 13px;
+    color: #717171;
+    line-height: 20px;
+}
+
+.Disption {
+    padding: 0px 20px;
+}
+.CommentFooter {
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.CommentRemore a {
+    text-transform: uppercase;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.DateMeta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+span.CommentDate {
+    color: var(--clr-primary);
+}
+.UserName h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--clr-primary-hover);
+}
+.CommentRemore span {
+    color: var(--clr-primary);
+    font-size: 18px;
+}
+
+.ServiceBox {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 25vw;
+    position: relative;
+}
+
+.ServiceBox img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.ServiceBox:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 75 97 / 50%);
+}
+
+.TextBox {
+    position: absolute;
+    bottom: 20px;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.TextBox h4 {
+    color: #fff;
+    font-size: 26px;
+}
+
+.IconBtn a {
+    display: flex;
+    align-items: center;
+}
+
+
+.about-footer {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #ffffff7a;
+    width: 250px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-footer .ThemeBtn {
+    text-transform: uppercase;
+    padding: 5px 30px;
+    background: #fff;
+    color: var(--clr-primary);
+    border: 2px solid;
+}
+
+.about-footer:after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background: url(../img/stamp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}

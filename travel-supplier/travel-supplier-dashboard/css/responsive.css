@@ -1,0 +1,252 @@
+/* @media (min-width: 991.98px) and (max-width: 1024px) {
+  .addsInfo {
+    min-height: 150px;
+  }
+} */
+@media (max-width: 991.98px) {
+  header.hide-nav {
+    transform: translateY(0) !important;
+  }
+
+  .navigation-container {
+    justify-content: flex-end;
+    gap: 30px;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Toggle Nav */
+
+  .ToggleButton {
+    background: transparent;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ToggleButton:focus {
+    box-shadow: none;
+  }
+
+  .ToggleButton span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--clr-primary);
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+  }
+
+  .ToggleButton span:nth-child(2) {
+    width: 16px;
+  }
+
+  .ToggleButton[aria-expanded="true"] span {
+    background: var(--clr-white);
+  }
+
+  .ToggleButton[aria-expanded="true"] + #SideNav {
+    transform: translateX(0);
+  }
+
+  .ToggleButton[aria-expanded="true"] span:first-child {
+    transform: rotate(-45deg);
+    top: 6px;
+    position: relative;
+  }
+
+  .ToggleButton[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .ToggleButton[aria-expanded="true"] span:nth-child(3) {
+    transform: rotate(45deg);
+    top: -8px;
+    position: relative;
+  }
+
+  #sideaNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: var(--clr-white);
+    width: 50%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    display: block;
+    z-index: 99;
+    transform: translateX(-101%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .ToggleButton[aria-expanded="true"] + #sideaNav {
+    transform: translateX(0);
+  }
+
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .ToggleButton[aria-expanded="true"] .nav-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .sidenav-logo {
+    display: flex;
+    padding: 20px;
+    background: var(--clr-primary);
+  }
+
+  .sidenav-logo img {
+    width: 70px;
+  }
+
+  #sideaNav .navbar-nav {
+    margin: 0 !important;
+    height: 100%;
+    gap: 15px;
+    overflow: auto;
+    padding: 20px 0;
+    align-items: flex-start;
+  }
+
+  #sideaNav .navbar-nav .nav-item {
+    padding: 0 20px;
+  }
+
+  .navbar-nav .nav-link {
+    color: var(--clr-dark);
+  }
+
+  /* Sidebar */
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sidebar.open-sidebar {
+    transform: translateX(0);
+  }
+
+  .sidebar.open-sidebar + .nav-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .sidebar-openBtn {
+    background: var(--clr-white);
+    color: var(--clr-primary);
+  }
+
+  .sidebar-openBtn:hover {
+    background: var(--clr-white);
+    color: var(--clr-primary);
+  }
+
+  /* Toggle Nav */
+
+  .ServiceBox {
+    height: 250px;
+  }
+  .TextBox h4 {
+    font-size: 24px;
+  }
+  ul.UserDetails {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .pageTilte h2 {
+    font-size: 24px;
+  }
+  .content-body {
+    padding: 15px;
+  }
+  .card-body {
+    padding: 15px;
+  }
+  .footer-navrow {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .footer-navBlock {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2f5f6d;
+    margin-bottom: 20px;
+  }
+
+  .footer-navBlock:last-child {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .CopyRight-Info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .CopyRight-Info p {
+    font-size: 12px;
+  }
+
+  ul.UserDetails {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .EnquiryList {
+    flex-wrap: wrap;
+  }
+  .enqDetails {
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .enqDetails h6 {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .callDate-info {
+    display: flex;
+    gap: 5px 10px;
+    flex-wrap: wrap;
+  }
+  .ImgUplaod label {
+    width: 100%;
+}
+}
+
+@media (max-width: 320px) {
+}

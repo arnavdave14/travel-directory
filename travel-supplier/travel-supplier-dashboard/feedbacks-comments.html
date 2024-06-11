@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks Comments</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <div class="mainLayout">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+               <div class="container">
+                  <div class="header-nav">
+                     <a class="navbar-brand" href="#">
+                        <img src="./img/logo.png" alt="">
+                     </a>
+   
+                     <div class="navigation-container">
+                        <div class="navigation">
+                           <button type="button" class="ThemeBtn sidebar-openBtn d-lg-none" onclick="toggleSidebar()">Open Sidebar</button>
+                           <button class="navbar-toggler ToggleButton" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#sideaNav" aria-controls="sideaNav" aria-expanded="false"
+                              aria-label="Toggle navigation">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <div class="nav-overlay" data-bs-toggle="collapse" data-bs-target="#sideaNav"></div>
+                           </button>
+   
+                           <div class="collapse navbar-collapse" id="sideaNav">
+                              <a href="index.html" class="sidenav-logo d-lg-none">
+                                 <img src="./img/logo.png" alt="">
+                              </a>
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">
+                                        Home
+                                    </a>
+                                </li>
+   
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../login-supplier.html">
+                                        Login
+                                    </a>
+                                </li>
+   
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../supplier-listing.html">
+                                        Supplier-Directory
+                                    </a>
+                                </li>
+   
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../events.html">
+                                        Industry-Events
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../blog.html">
+                                        Partner-Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.traveladvisorresourcecenter.com/">
+                                        TA-Resources
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                           </div>
+   
+                           <div class="nav-overlay" data-bs-toggle="collapse" data-bs-target="#sideaNav"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+   </header>
+
+   
+         <main>
+            <div class="dashboardLayout">
+               <div class="sidebar" id="sidebar">
+                  <div class="dashProfile">
+                     <div class="profileImg">
+                        <img src="./img/profile-img.png" alt="">
+                        <span class="circle-cut"></span>
+                     </div>
+                     <h6>Robert Grant</h6>
+                     <div class="rating-chip">
+                        <span>4.5</span>
+                        <i class="material-icons">star</i>
+                     </div>
+                  </div>
+   
+                  <ul class="sidebar-navs">
+                     <li><a href="./index.html" >Dashboard</a></li>
+                     <li><a href="./service.html">Services</a></li>
+                     <li><a href="./feedbacks-comments.html" class="active">Feedbacks/Comments</a></li>
+                     <li><a href="./account-info.html">Account Info</a></li>
+                     <!-- <li><a href="javascript:void(0)" >Change Password</a></li> -->
+                     <li><a href="./blogs.html">Blogs</a></li>
+                  </ul>
+   
+                  <div class="CommunityBlock">
+                     <ul class="logout-settings">
+                        <li>
+                           <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#EnquiryInfoModal">
+                              <i class="material-icons">settings</i>
+                              Settings
+                           </a>
+                        </li>
+   
+                        <li>
+                           <a href="../login-supplier.html">
+                              <i class="material-icons">logout</i>
+                              Logout
+                           </a>
+                        </li>
+                     </ul>
+   
+                     <a href="javascript:void(0)" class="CommunityInfo">
+                        <img src="./img/community-img.png" alt="">
+                        <h6>Join Our Community</h6>
+                     </a>
+                  </div>
+               </div>
+               <div class="nav-overlay" onclick="toggleSidebar()"></div>
+
+                <div class="content-body">
+                    <div class="row gx-5 mb-4">
+                        <div class="col-lg-12">
+                            <div class="pageTilte mb-0 mb-lg-4">
+                                <h2 class="m-0">Feedback & Comments</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-0 mt-lg-5">
+                        <div class="col-lg-6 mb-4 col-md-6 col-xl-4">
+                            <div class="CommentsBox">
+                                <div class="CommentsBg">
+                                    <img src="img/comment01.jpg" alt="">
+                                </div>
+                                <div class="UserMeta">
+                                    <div class="UserImg">
+                                        <img src="img/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="UserName">
+                                        <h4>User Name</h4>
+                                        <p>4.5 <span class="material-icons">star</span></p>
+                                    </div>
+                                </div>
+                                <div class="Disption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias
+                                        iusto enim harum, repudiandae illum similique sint impedit dolore cum at quaerat
+                                        quidem, expedita dolor, magni exercitationem animi asperiores incidunt.</p>
+                                </div>
+                                <div class="CommentFooter">
+                                    <div class="CommentRemore">
+                                        <a href="#">Read More <span class="material-icons">
+                                                east
+                                            </span></a>
+                                    </div>
+                                    <div class="DateMeta">
+                                        <span class="CommentDate">24/04/2024</span>
+                                        <span class="CommentTime">13:05 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4 col-md-6 col-xl-4">
+                            <div class="CommentsBox">
+                                <div class="CommentsBg">
+                                    <img src="img/comment02.jpg" alt="">
+                                </div>
+                                <div class="UserMeta">
+                                    <div class="UserImg">
+                                        <img src="img/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="UserName">
+                                        <h4>User Name</h4>
+                                        <p>4.5 <span class="material-icons">star</span></p>
+                                    </div>
+                                </div>
+                                <div class="Disption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias
+                                        iusto enim harum, repudiandae illum similique sint impedit dolore cum at quaerat
+                                        quidem, expedita dolor, magni exercitationem animi asperiores incidunt.</p>
+                                </div>
+                                <div class="CommentFooter">
+                                    <div class="CommentRemore">
+                                        <a href="#">Read More <span class="material-icons">
+                                                east
+                                            </span></a>
+                                    </div>
+                                    <div class="DateMeta">
+                                        <span class="CommentDate">24/04/2024</span>
+                                        <span class="CommentTime">13:05 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4 col-md-6 col-xl-4">
+                            <div class="CommentsBox">
+                                <div class="CommentsBg">
+                                    <img src="img/comment03.jpg" alt="">
+                                </div>
+                                <div class="UserMeta">
+                                    <div class="UserImg">
+                                        <img src="img/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="UserName">
+                                        <h4>User Name</h4>
+                                        <p>4.5 <span class="material-icons">star</span></p>
+                                    </div>
+                                </div>
+                                <div class="Disption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias
+                                        iusto enim harum, repudiandae illum similique sint impedit dolore cum at quaerat
+                                        quidem, expedita dolor, magni exercitationem animi asperiores incidunt.</p>
+                                </div>
+                                <div class="CommentFooter">
+                                    <div class="CommentRemore">
+                                        <a href="#">Read More <span class="material-icons">
+                                                east
+                                            </span></a>
+                                    </div>
+                                    <div class="DateMeta">
+                                        <span class="CommentDate">24/04/2024</span>
+                                        <span class="CommentTime">13:05 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4 col-md-6 col-xl-4">
+                            <div class="CommentsBox">
+                                <div class="CommentsBg">
+                                    <img src="img/comment01.jpg" alt="">
+                                </div>
+                                <div class="UserMeta">
+                                    <div class="UserImg">
+                                        <img src="img/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="UserName">
+                                        <h4>User Name</h4>
+                                        <p>4.5 <span class="material-icons">star</span></p>
+                                    </div>
+                                </div>
+                                <div class="Disption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias
+                                        iusto enim harum, repudiandae illum similique sint impedit dolore cum at quaerat
+                                        quidem, expedita dolor, magni exercitationem animi asperiores incidunt.</p>
+                                </div>
+                                <div class="CommentFooter">
+                                    <div class="CommentRemore">
+                                        <a href="#">Read More <span class="material-icons">
+                                                east
+                                            </span></a>
+                                    </div>
+                                    <div class="DateMeta">
+                                        <span class="CommentDate">24/04/2024</span>
+                                        <span class="CommentTime">13:05 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4 col-md-6 col-xl-4">
+                            <div class="CommentsBox">
+                                <div class="CommentsBg">
+                                    <img src="img/comment02.jpg" alt="">
+                                </div>
+                                <div class="UserMeta">
+                                    <div class="UserImg">
+                                        <img src="img/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="UserName">
+                                        <h4>User Name</h4>
+                                        <p>4.5 <span class="material-icons">star</span></p>
+                                    </div>
+                                </div>
+                                <div class="Disption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias
+                                        iusto enim harum, repudiandae illum similique sint impedit dolore cum at quaerat
+                                        quidem, expedita dolor, magni exercitationem animi asperiores incidunt.</p>
+                                </div>
+                                <div class="CommentFooter">
+                                    <div class="CommentRemore">
+                                        <a href="#">Read More <span class="material-icons">
+                                                east
+                                            </span></a>
+                                    </div>
+                                    <div class="DateMeta">
+                                        <span class="CommentDate">24/04/2024</span>
+                                        <span class="CommentTime">13:05 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4 col-md-6 col-xl-4">
+                            <div class="CommentsBox">
+                                <div class="CommentsBg">
+                                    <img src="img/comment03.jpg" alt="">
+                                </div>
+                                <div class="UserMeta">
+                                    <div class="UserImg">
+                                        <img src="img/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="UserName">
+                                        <h4>User Name</h4>
+                                        <p>4.5 <span class="material-icons">star</span></p>
+                                    </div>
+                                </div>
+                                <div class="Disption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias
+                                        iusto enim harum, repudiandae illum similique sint impedit dolore cum at quaerat
+                                        quidem, expedita dolor, magni exercitationem animi asperiores incidunt.</p>
+                                </div>
+                                <div class="CommentFooter">
+                                    <div class="CommentRemore">
+                                        <a href="#">Read More <span class="material-icons">
+                                                east
+                                            </span></a>
+                                    </div>
+                                    <div class="DateMeta">
+                                        <span class="CommentDate">24/04/2024</span>
+                                        <span class="CommentTime">13:05 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container">
+               <div class="footer-navrow">
+   
+                <div class="footer-navBlock">
+                    <div class="about-footer">
+                        <a href="./login-supplier.html" class="ThemeBtn">Login</a>
+                    </div>
+                 </div>
+   
+                  <div class="footer-navBlock">
+                     <h6>Quick Links</h6>
+                     <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../supplier-listing.html">Supplier Directory</a></li>
+                        <li><a href="../events.html">Industry Events</a></li>
+                        <li><a href="../blog.html">Partner Blogs</a></li>
+                        <li><a href="https://www.traveladvisorresourcecenter.com/">TA Resources</a></li>
+                     </ul>
+                  </div>
+   
+                  <div class="footer-navBlock">
+                     <h6>Our Company</h6>
+                     <ul>
+                        <li><a href="../about-supplier.html">About Travel Partner Directory</a></li>
+                        <li><a href="../terms-supplier.html">Terms & Conditions</a></li>
+                        <li><a href="../privacy-supplier.html">Privacy Policy</a></li>
+                        <li><a href="../report-us.html">Report A Problem</a></li>
+                        <li><a href="../supplier-faq.html">FAQS</a></li>
+                     </ul>
+                  </div>
+   
+                  <div class="footer-navBlock">
+                     <h6>TA Resources</h6>
+                     <ul>
+                        <li><a href="https://www.traveladvisorresourcecenter.com/">Travel Advisor Resource Center (TARC)</a></li>
+                        <li><a href="https://www.traveladvisorresourcecenter.com/">TA Launchpad</a></li>
+                        <li><a href="https://www.traveladvisorresourcecenter.com/">TA Resource Guide</a></li>
+                        <li><a href="https://www.traveladvisorresourcecenter.com/">Travel Agency Puzzle</a></li>
+                        <li><a href="https://www.traveladvisorresourcecenter.com/">Personalized Travel Guides</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="brandCopyright">
+               <div class="container">
+                  <div class="CopyRight-Info">
+                     <img src="./img/logo.png" alt="">
+                     <p>© Copyright Travel Advisor Resource Center (TARC) 2024</p>
+                  </div>
+               </div>
+            </div>
+   </footer>
+    </div>
+
+    <button id="scrollTotop">
+        <div class="ScrollArrow">
+            <i class="material-icons">expand_less</i>
+        </div>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="EnquiryInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="EnquiryInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="mb-4 FormLabels">
+                                <label class="f-12">Old Password</label>
+                                <input type="password" value="tetstonw6262" class="form-control">
+                            </div>
+                            <div class="mb-4 FormLabels">
+                                <label class="f-12">New Password</label>
+                                <input type="password" value="tetstonw6262" class="form-control">
+                                <div class="PasswordProcess">
+                                    <div class="PassStep">
+                                        <span class="Fillbar Passbar"></span>
+                                        <span class="Passbar"></span>
+                                        <span class="Passbar"></span>
+                                        <span>Weak</span>
+                                    </div>
+                                    <div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Allow Weak Password
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 FormLabels">
+                                <label class="f-12">Confirm Password</label>
+                                <input type="password" value="tetstonw6262" class="form-control">
+                            </div>
+                            <div>
+                                <a href="#" class="ThemeBtn"><span class="material-icons">password</span> Change
+                                    password</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Chart -->
+
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="./js/ProfileViewsChart.js"></script>
+</body>
+
+</html>

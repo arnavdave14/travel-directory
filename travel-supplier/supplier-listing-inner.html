@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Travel Supplier</title>
+    <link rel="shortcut icon" href="./Image/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/fevicon.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+    .accordion-button {
+        background-color: #F2EDED;
+    }
+
+
+    .accordion-button:not(.collapsed) {
+        background: #F2EDED !important;
+        color: #03aabb;
+        box-shadow: none;
+    }
+
+    .accordion-button.asked {
+        background: #fff;
+    }
+
+    .accordion-button.asked:not(.collapsed) {
+        background: #FFF !important;
+        color: #03aabb;
+        box-shadow: none;
+    }
+
+
+    </style>
+
+    
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="header-nav">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./Image/logo.png" alt="">
+                    </a>
+
+                    <div class="navigation-container justify-content-lg-center">
+                        <div class="navigation">
+                            <button class="navbar-toggler ToggleButton" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sideaNav" aria-controls="sideaNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="sideaNav">
+                                <a href="index.html" class="sidenav-logo d-lg-none">
+                                    <img src="./Image/logo.png" alt="">
+                                </a>
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./index.html">
+                                            Home
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./login-supplier.html">
+                                            Login
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./supplier-listing.html">
+                                            Supplier-Directory
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./events.html">
+                                            Industry-Events
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./blog.html">
+                                            Partner-Blog
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.traveladvisorresourcecenter.com">
+                                            TA-Resources
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="nav-overlay" data-bs-toggle="collapse" data-bs-target="#sideaNav"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="topBanner-wrapper overflow-visible"
+    style="background: url(./Image/bannerImg.png) center no-repeat; background-size: cover;overflow: visible; padding: 130px 0;">
+        <div class="container">
+            <div class="row ">
+              
+            </div>
+        </div>
+    </section>
+    
+    <section class=" agent-profile overflow-visible ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="agent-profile" style="top: -40px;">
+                        <div class="image">
+                            <img src="./Image/agent-list/agent-inner-profile.png" alt="">
+                            <div class="new-recommend">
+                                <p class="rate-list left">4.5 , 90 Reviews</p>
+                                <!-- <p class="exp"><span>100% Recommend</span> | <span>10 Years Of Experince</span></p> -->
+                            </div>
+                        </div>
+                        <div class="description">
+                            <div class="main-head">
+                                <button class="premiumBtn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Offical Listing"><span class="material-symbols-outlined">
+                                    star
+                                    </span> Offical Listing</button>
+                                    <h3 class="name">Paige Struges <div class="supplier-logo">
+                                        <img src="./Image/agent-list/supplier-logo.png" alt="">
+                                    </div></h3>
+                                <h4 class="location">Santa Barbara , CA</h4>
+                                <p class="positon">Travel Agency Name<span class="icon">
+                                    <span class="icon-circle">
+                                        <img src="./Image/agent-list/facebook.svg" alt="">
+                                    </span>
+                                    <span class="icon-circle">
+                                        <img src="./Image/agent-list/twitter.svg" alt="">
+                                    </span>
+                                    <span class="icon-circle">
+                                        <img src="./Image/agent-list/youtube.svg" alt="">
+                                    </span>
+                                    <span class="icon-circle">
+                                        <img src="./Image/agent-list/instagram.svg" alt="">
+                                    </span>
+                                </span></p>
+                            </div>
+                            
+                            <div class="website-link mt-3">
+                                <p><b>Website Link : </b> <br><a href="#">www.testing123.com</a></p>
+                                <div class="logo-btn">
+                                    
+                                    <button>
+                                        <a href="mailto:someone@example.com">
+                                            <img src="./Image/agent-list/mail.svg" alt="">
+                                            <p>Email</p>
+                                        </a>
+                                    </button>
+                                    <button class="callButton supplier" onclick="handleClick()">
+                                        
+                                            <img src="./Image/agent-list/call.svg" alt="">
+                                            <span class="call-text">Call</span>
+                                            <span class="number">123-456-7890</span>
+                                        
+                                    </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <a href="javascript:void(0)">
+                                            <img src="./Image/agent-list/inquiry.svg" alt="">
+                                            <p>Inquiry</p>
+                                        </a>
+                                    </button>
+                                    <button>
+                                       <a href="javascript:void(0)">
+                                           <img src="./Image/check-button.svg" alt="">
+                                           <p>Claimed</p>
+                                       </a>
+                                   </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-infortmation custom-space pt-0">
+      <div class="container">
+         <div class="row">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Advisor</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Supplier</button>
+               </li>
+               
+            </ul>
+             <div class="tab-content " id="pills-tabContent">
+
+               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  <div class="col-lg-12">
+                     <div class="about-para mb-5">
+                     <h3 class="mb-1">Caribbean, Europe, Disney, River and Ocean Cruises</h3>
+                     <p>I guess you can call me a world traveler, as I have visited over 25 countries in Europe, Australia, the Caribbean, Asia, the Middle East, Central America and South Pacific. I have also cruised to ports-of-call in the Caribbean, Mediterranean, and Mexico. I also know everything Disney! Therefore, I can help you find the ideal vacation you will enjoy and love! I provide exclusive one-on-one service, in-depth planning, and personal time for each and every one of my clients. Before I create an itinerary, I will learn more about your budget, trip preferences, and your ideal travel holiday. </p>
+                     <p>From there, I can map out a travel plan that is customized especially for you. I genuinely care about you and making sure your trip is everything you hoped for and more! I can arrange a trip that includes all-inclusive packages and top-of-the-line amenities. Whatever your heart desires, I will make it happen! Why not call me today so you can get away from it all and get you to your perfect trip?</p>
+                     </div>
+                  </div>   
+                 <div class="col-lg-12 p-0">
+                  <div class="row detail-row">
+                     <div class="col-12 mb-3 p-0">
+                        <h2 style="text-transform: uppercase;">contact-infortmation</h2> 
+                      </div>
+                     <div class="detail">
+                        <div class="col-6">
+                        <div class="detail-heading">
+                           <h6>Primary CONTACT NAME:</h6>
+                        </div>
+                        </div>
+                        <div class="col-6 p-0 ">
+                        <div class="datial-content">
+                           <p>Jane Doe. Marketing and Sales</p>
+                        </div>
+                        </div>
+                     </div>
+                     <div class="detail grey-box"> 
+                        <div class="col-6 p-0">
+                           <div class="detail-heading">
+                              <h6>Primary PHONE NUMBER:</h6>
+                           </div>
+                        </div>
+                        <div class="col-6 p-0 ">
+                           <div class="datial-content">
+                              <p>+1234567890</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="detail">
+                        <div class="col-6 p-0">
+                           <div class="detail-heading">
+                              <h6>Primary email address:</h6>
+                           </div>
+                        </div>
+                        <div class="col-6 p-0 ">
+                           <div class="datial-content">
+                              <p>Sample@websit.com</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="detail grey-box">
+                        <div class="col-6 p-0">
+                           <div class="detail-heading">
+                              <h6>alternate email address:</h6>
+                           </div>
+                        </div>
+                        <div class="col-6 p-0 ">
+                           <div class="datial-content">
+                              <p>conceirge: Sample@websit.comSample@websit.com</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="detail">
+                        <div class="col-6 p-0">
+                           <div class="detail-heading">
+                              <h6>additional phone number:</h6>
+                           </div>
+                        </div>
+                        <div class="col-6 p-0 ">
+                           <div class="datial-content">
+                              <p>customer service: +1234567980</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="detail grey-box">
+                        <div class="col-6 p-0">
+                           <div class="detail-heading">
+                              <h6>agent portal link:</h6>
+                           </div>
+                        </div>
+                        <div class="col-6 p-0 ">
+                           <div class="datial-content">
+                              <p>www.website.com</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="detail">
+                        <div class="col-6 p-0">
+                           <div class="detail-heading">
+                              <h6>education & training website:</h6>
+                           </div>
+                        </div>
+                        <div class="col-6 p-0 ">
+                           <div class="datial-content">
+                              <p>www.website.com</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="detail grey-box">
+                        <div class="col-6 p-0">
+                           <div class="detail-heading">
+                              <h6>additonalwebsite:</h6>
+                           </div>
+                        </div>
+                        <div class="col-6 p-0 ">
+                           <div class="datial-content">
+                              <p>www.website.com</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="detail">
+                        <div class="col-6 d-flex p-0">
+                           <div class="detail-heading">
+                              <h6>social pages</h6>
+                           </div>
+                        </div>
+                        <div class="col-6 p-0 ">
+                           <div class="datil-social-pages">
+                              <a href="#">
+                                 <div class="social-logo">
+                                    <div class="social-logo-img">
+                                       <img src="Image/instagram-logo.png">
+                                    </div>
+                                 </div>
+                              </a>
+                              <a href="#">
+                                 <div class="social-logo">
+                                    <div class="social-logo-img">
+                                       <img src="Image/facebook-logo.png">
+                                    </div>
+                                 </div>
+                              </a>
+                              <a href="#">
+                                 <div class="social-logo">
+                                    <div class="social-logo-img">
+                                       <img src="Image/linkedin-logo.png">
+                                    </div>
+                                 </div>
+                              </a>
+                              <a href="#">
+                                 <div class="social-logo">
+                                    <div class="social-logo-img">
+                                       <img src="Image/twitter-logo.png">
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                  <div class="col-lg-12">
+                     <div class="about-para mb-5">
+                     <h3 class="mb-1">Caribbean, Europe, Disney, River and Ocean Cruises</h3>
+                     <p>I guess you can call me a world traveler, as I have visited over 25 countries in Europe, Australia, the Caribbean, Asia, the Middle East, Central America and South Pacific. I have also cruised to ports-of-call in the Caribbean, Mediterranean, and Mexico. I also know everything Disney! Therefore, I can help you find the ideal vacation you will enjoy and love! I provide exclusive one-on-one service, in-depth planning, and personal time for each and every one of my clients. Before I create an itinerary, I will learn more about your budget, trip preferences, and your ideal travel holiday. </p>
+                     <p>From there, I can map out a travel plan that is customized especially for you. I genuinely care about you and making sure your trip is everything you hoped for and more! I can arrange a trip that includes all-inclusive packages and top-of-the-line amenities. Whatever your heart desires, I will make it happen! Why not call me today so you can get away from it all and get you to your perfect trip?</p>
+                     </div>
+                  </div>   
+                  <div class="col-lg-12 p-0">
+                     <div class="row detail-row">
+                        <div class="col-12 mb-3">
+                          <h2 style="text-transform: uppercase;">contact-infortmation</h2> 
+                        </div>
+                        <div class="detail">
+                           <div class="col-6">
+                           <div class="detail-heading">
+                              <h6>Primary CONTACT NAME:</h6>
+                           </div>
+                           </div>
+                           <div class="col-6 p-0 ">
+                           <div class="datial-content">
+                              <p>Jane Doe. Marketing and Sales</p>
+                           </div>
+                           </div>
+                        </div>
+                        <div class="detail grey-box"> 
+                           <div class="col-6 p-0">
+                              <div class="detail-heading">
+                                 <h6>Primary PHONE NUMBER:</h6>
+                              </div>
+                           </div>
+                           <div class="col-6 p-0 ">
+                              <div class="datial-content">
+                                 <p>+1234567890</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="detail">
+                           <div class="col-6 p-0">
+                              <div class="detail-heading">
+                                 <h6>Primary email address:</h6>
+                              </div>
+                           </div>
+                           <div class="col-6 p-0 ">
+                              <div class="datial-content">
+                                 <p>Sample@websit.com</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="detail grey-box">
+                           <div class="col-6 p-0">
+                              <div class="detail-heading">
+                                 <h6>alternate email address:</h6>
+                              </div>
+                           </div>
+                           <div class="col-6 p-0 ">
+                              <div class="datial-content">
+                                 <p>conceirge: Sample@websit.comSample@websit.com</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="detail">
+                           <div class="col-6 p-0">
+                              <div class="detail-heading">
+                                 <h6>additional phone number:</h6>
+                              </div>
+                           </div>
+                           <div class="col-6 p-0 ">
+                              <div class="datial-content">
+                                 <p>customer service: +1234567980</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="detail grey-box">
+                           <div class="col-6 p-0">
+                              <div class="detail-heading">
+                                 <h6>agent portal link:</h6>
+                              </div>
+                           </div>
+                           <div class="col-6 p-0 ">
+                              <div class="datial-content">
+                                 <p>www.website.com</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="detail">
+                           <div class="col-6 p-0">
+                              <div class="detail-heading">
+                                 <h6>education & training website:</h6>
+                              </div>
+                           </div>
+                           <div class="col-6 p-0 ">
+                              <div class="datial-content">
+                                 <p>www.website.com</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="detail grey-box">
+                           <div class="col-6 p-0">
+                              <div class="detail-heading">
+                                 <h6>additonalwebsite:</h6>
+                              </div>
+                           </div>
+                           <div class="col-6 p-0 ">
+                              <div class="datial-content">
+                                 <p>www.website.com</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="detail">
+                           <div class="col-6 d-flex p-0">
+                              <div class="detail-heading">
+                                 <h6>social pages</h6>
+                              </div>
+                           </div>
+                           <div class="col-6 p-0 ">
+                              <div class="datil-social-pages">
+                                 <a href="#">
+                                    <div class="social-logo">
+                                       <div class="social-logo-img">
+                                          <img src="Image/instagram-logo.png">
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="social-logo">
+                                       <div class="social-logo-img">
+                                          <img src="Image/facebook-logo.png">
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="social-logo">
+                                       <div class="social-logo-img">
+                                          <img src="Image/linkedin-logo.png">
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="#">
+                                    <div class="social-logo">
+                                       <div class="social-logo-img">
+                                          <img src="Image/twitter-logo.png">
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+
+               
+
+             </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+    <section class="custom-space asked grey">
+        <div class="container">
+           <div class="row">
+              <div class="secHead text-center">
+                 <h2>Asked & Answered</h2>
+                 <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
+                    incididunt ut labore et dolore magna aliqua.</h6>
+              </div>
+           </div>
+           <div class="row mt-5">
+              <div class="col-12">
+                 <div class="accordion accordion-flush QA-Accordian" id="QAccordian">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button asked collapsed" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#QuestionOne" aria-expanded="false"
+                             aria-controls="QuestionOne">
+                             Question 1
+                          </button>
+                       </h2>
+                       <div id="QuestionOne" class="accordion-collapse collapse">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Voluptas doloribus porro qui aspernatur blanditiis dolorem excepturi assumenda
+                             pariatur ratione ab!</div>
+                       </div>
+                    </div>
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button asked collapsed" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#QuestionTwo" aria-expanded="false"
+                             aria-controls="QuestionTwo">
+                             Question 2
+                          </button>
+                       </h2>
+                       <div id="QuestionTwo" class="accordion-collapse collapse">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                             Illum ut voluptate quo quam, voluptatum beatae temporibus deleniti? Autem neque esse
+                             architecto adipisci fugit expedita soluta. Ut qui neque tempora voluptatem!</div>
+                       </div>
+                    </div>
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button asked collapsed" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#QuestionThree" aria-expanded="false"
+                             aria-controls="QuestionThree">
+                             Question 3
+                          </button>
+                       </h2>
+                       <div id="QuestionThree" class="accordion-collapse collapse">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Explicabo ad repellendus itaque reprehenderit earum consequatur error illum
+                             distinctio ex dolore saepe pariatur eos quisquam officiis, doloremque iusto tempore
+                             facere. Accusantium eum tempora, perferendis fuga fugit repellat rerum quibusdam,
+                             vitae provident, pariatur necessitatibus sed praesentium. Dolorem delectus
+                             necessitatibus cum sed vel!</div>
+                       </div>
+                    </div>
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button asked collapsed" type="button" data-bs-toggle="collapse"
+                             data-bs-target="#QuestionFour" aria-expanded="false"
+                             aria-controls="QuestionFour">
+                             Question 4
+                          </button>
+                       </h2>
+                       <div id="QuestionFour" class="accordion-collapse collapse">
+                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                             Impedit, earum consectetur. Eius ratione quidem recusandae asperiores sit ea
+                             corporis vero ut ab! Dicta nulla placeat nemo vitae quasi error voluptatibus?
+                             Corporis, dicta distinctio? Iusto provident quibusdam nisi pariatur, quisquam porro
+                             commodi repellat rerum itaque vel, suscipit sit, expedita at sequi consequatur ab
+                             tempora velit minima? Adipisci, voluptas? Culpa, rerum sequi.</div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="custom-space current-promo">
+        <div class="container">
+           <div class="row">
+              <div class="secHead side align-items-lg-end mb-4">
+                 <div class="browse-head">
+                    <h2>Current Promotions</h2>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                       incididunt ut labore et dolore magna aliqua.</h6>
+                 </div>
+                 <div class="bottom-nav top-left">
+  
+                    <div class="swiper-button-prev">
+                       <img src="./Image/prev.svg" alt="">
+                    </div>
+  
+                    <div class="swiper-button-next">
+                       <img src="./Image/next.svg" alt="">
+                    </div>
+                 </div>
+              </div>
+              <div class="col-12">
+                 <div class="swiper PromotionSlider">
+                    <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-1.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-2.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-3.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-4.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-1.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-2.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-3.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-4.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+  
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-1.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="swiper-slide">
+                          <div class="featured-box blog">
+                             <img src="./Image/blog-2.png" alt="" class="inner-blog-img">
+                             <div class="inner-div">
+                                <h3>New York Travel Agent Forum </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                             </div>
+                             <div class="inner-footer">
+                                <a href="./promotions-details.html" class="read-more">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+    <section class="grey certificate custom-space">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                        <div class="intHead certificate">
+                            <img src="./Image/agent-list/stamp-certificate.png" alt="">
+                            <h4>Certifications and  Accreditations</h4>
+
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. </p>
+
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. </p>
+                        
+                        </div>
+                    </div>
+                <div class="col-lg-6">
+                    <div class="intImgcertificate">
+                        <img src="./Image/agent-list/certificate-1.png" alt="" class="img-one">
+                        <img src="./Image/agent-list/certificate-2.png" alt="" class="img-two">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="swiper certificateLogo">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-1.png" alt="">
+                                    <p>Award #1</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-2.png" alt="">
+                                    <p>Award #2</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-3.png" alt="">
+                                    <p>Award #3</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-4.png" alt="">
+                                    <p>Award #4</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-5.png" alt="">
+                                    <p>Award #5</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-1.png" alt="">
+                                    <p>Award #1</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-2.png" alt="">
+                                    <p>Award #2</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-3.png" alt="">
+                                    <p>Award #3</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-4.png" alt="">
+                                    <p>Award #4</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="logo-div">
+                                    <img src="./Image/agent-list/certi-5.png" alt="">
+                                    <p>Award #5</p>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="travel-specialities custom-space">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-5">
+                 <div class="browse-head">
+                    <h2>My Travel Specialties</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                       incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis culpa architecto consectetur
+                       sed repellendus eius, aliquam unde quas fuga fugit consequatur commodi tempora at quibusdam. Totam,
+                       fugit enim. Quae, provident!</p>
+  
+                    <ul class="nav nav-tabs" id="TravelSpecialtiesTab" role="tablist">
+                       <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="destinations-tab" data-bs-toggle="tab"
+                             data-bs-target="#Destinations" type="button" role="tab" aria-controls="Destinations"
+                             aria-selected="true">Destinations</button>
+                       </li>
+                       <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="styles-tab" data-bs-toggle="tab" data-bs-target="#Styles"
+                             type="button" role="tab" aria-controls="Styles" aria-selected="false">Styles</button>
+                       </li>
+                       <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="suppliers-tab" data-bs-toggle="tab" data-bs-target="#Suppliers"
+                             type="button" role="tab" aria-controls="Suppliers" aria-selected="false">Suppliers</button>
+                       </li>
+                    </ul>
+  
+                    <div class="bottom-nav top-left justify-content-start" style="left: 0;">
+                       <div class="ts-btn-prev">
+                          <img src="./Image/prev.svg" alt="">
+                       </div>
+  
+                       <div class="ts-btn-next">
+                          <img src="./Image/next.svg" alt="">
+                       </div>
+                    </div>
+                 </div>
+              </div>
+  
+              <div class="col-lg-7">
+                 <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="Destinations" role="tabpanel"
+                       aria-labelledby="destinations-tab">
+                       <div class="swiper travel-slider">
+                          <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-1.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-2.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-3.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-4.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="tab-pane fade" id="Styles" role="tabpanel" aria-labelledby="styles-tab">
+                       <div class="swiper travel-slider">
+                          <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-1.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-2.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-3.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-4.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="tab-pane fade" id="Suppliers" role="tabpanel" aria-labelledby="suppliers-tab">
+                       <div class="swiper travel-slider">
+                          <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-1.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-2.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-3.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="swiper-slide">
+                                <div class="featured-box blog">
+                                   <img src="./Image/blog-4.png" alt="" class="inner-blog-img">
+                                   <div class="inner-div">
+                                      <h3>New York Travel Agent Forum </h3>
+                                      <p>Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                                   </div>
+                                   <div class="inner-footer">
+                                      <a href="./blog-inner.html" class="read-more">Read More</a>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+
+
+    <section class="browse-style custom-space grey">
+        <div class="container">
+           <div class="row">
+              <div class="secHead side">
+                 <div class="browse-head">
+                    <h2>Travel Highlights</h2>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                       incididunt ut labore et dolore magna aliqua.</h6>
+                 </div>
+  
+                 <a href="./highlights.html" class="ThemeBtn">View All Highlights</a>
+              </div>
+           </div>
+  
+           <div class="slider-browse mt-5">
+              <div class="swiper highlights">
+                 <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <a href="./travel-listing.html">
+                          <div class="style-box">
+                             <img src="./Image/browse-1.png" alt="">
+                             <p>All Inclusive</p>
+                          </div>
+                       </a>
+                    </div>
+                    <div class="swiper-slide">
+                       <a href="./travel-listing.html">
+                          <div class="style-box">
+                             <img src="./Image/browse-1.png" alt="">
+                             <p>All Inclusive</p>
+                          </div>
+                       </a>
+                    </div>
+                    <div class="swiper-slide">
+                       <a href="./travel-listing.html">
+                          <div class="style-box">
+                             <img src="./Image/browse-1.png" alt="">
+                             <p>All Inclusive</p>
+                          </div>
+                       </a>
+                    </div>
+                    <div class="swiper-slide">
+                       <a href="./travel-listing.html">
+                          <div class="style-box">
+                             <img src="./Image/browse-1.png" alt="">
+                             <p>All Inclusive</p>
+                          </div>
+                       </a>
+                    </div>
+                    <div class="swiper-slide">
+                       <a href="./travel-listing.html">
+                          <div class="style-box">
+                             <img src="./Image/browse-1.png" alt="">
+                             <p>All Inclusive</p>
+                          </div>
+                       </a>
+                    </div>
+                    <div class="swiper-slide">
+                       <a href="./travel-listing.html">
+                          <div class="style-box">
+                             <img src="./Image/browse-1.png" alt="">
+                             <p>All Inclusive</p>
+                          </div>
+                       </a>
+                    </div>
+                    <div class="swiper-slide">
+                       <a href="./travel-listing.html">
+                          <div class="style-box">
+                             <img src="./Image/browse-1.png" alt="">
+                             <p>All Inclusive</p>
+                          </div>
+                       </a>
+                    </div>
+                    <div class="swiper-slide">
+                       <a href="./travel-listing.html">
+                          <div class="style-box">
+                             <img src="./Image/browse-1.png" alt="">
+                             <p>All Inclusive</p>
+                          </div>
+                       </a>
+                    </div>
+                    <div class="swiper-slide">
+                       <a href="./travel-listing.html">
+                          <div class="style-box">
+                             <img src="./Image/browse-1.png" alt="">
+                             <p>All Inclusive</p>
+                          </div>
+                       </a>
+                    </div>
+                 </div>
+  
+                 <div class="bottom-nav left-off">
+                    <div class="swiper-button-prev">
+                       <img src="./Image/prev.svg" alt="">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                       <img src="./Image/next.svg" alt="">
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+    <section class="faq custom-space ">
+        <div class="container">
+            <div class="row">
+                <div class="secHead text-center">
+                    <h2>Frequently Asked Questions</h2>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
+                        incididunt ut labore et dolore magna aliqua.</h6>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel.
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" >
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Voluptas doloribus porro qui aspernatur blanditiis dolorem excepturi assumenda
+                                    pariatur ratione ab!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, adipisci!
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Illum ut voluptate quo quam, voluptatum beatae temporibus deleniti? Autem neque esse
+                                    architecto adipisci fugit expedita soluta. Ut qui neque tempora voluptatem!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, adipisci!
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Explicabo ad repellendus itaque reprehenderit earum consequatur error illum
+                                    distinctio ex dolore saepe pariatur eos quisquam officiis, doloremque iusto tempore
+                                    facere. Accusantium eum tempora, perferendis fuga fugit repellat rerum quibusdam,
+                                    vitae provident, pariatur necessitatibus sed praesentium. Dolorem delectus
+                                    necessitatibus cum sed vel!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, adipisci!
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Impedit, earum consectetur. Eius ratione quidem recusandae asperiores sit ea
+                                    corporis vero ut ab! Dicta nulla placeat nemo vitae quasi error voluptatibus?
+                                    Corporis, dicta distinctio? Iusto provident quibusdam nisi pariatur, quisquam porro
+                                    commodi repellat rerum itaque vel, suscipit sit, expedita at sequi consequatur ab
+                                    tempora velit minima? Adipisci, voluptas? Culpa, rerum sequi.</div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section custom-space  grey">
+        <div class="container">
+            <div class="row">
+                <div class="secHead text-center">
+                    <h4>TIPS AND INSPIRATION</h4>
+                    <h2>Travel Journals</h2>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</h6>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-4">
+                    <div class="featured-box blog">
+                        <img src="./Image/blog-1.png" alt="" class="inner-blog-img">
+                        <div class="inner-div">
+                            <h3>New York Travel Agent Forum </h3>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                        </div>
+                        <div class="inner-footer">
+                            <a href="./blog-inner.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-4">
+                    <div class="featured-box blog">
+                        <img src="./Image/blog-2.png" alt="" class="inner-blog-img">
+                        <div class="inner-div">
+                            <h3>Thailand Travel Agent Forum  </h3>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                        </div>
+                        <div class="inner-footer">
+                            <a href="./blog-inner.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-4 ">
+                    <div class="featured-box blog">
+                        <img src="./Image/blog-3.png" alt="" class="inner-blog-img">
+                        <div class="inner-div">
+                            <h3>California Travel Agent Forum </h3>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                        </div>
+                        <div class="inner-footer">
+                            <a href="./blog-inner.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-4">
+                    <div class="featured-box blog">
+                        <img src="./Image/blog-4.png" alt="" class="inner-blog-img">
+                        <div class="inner-div">
+                            <h3>Starting your business</h3>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Proina quet iaculis justo. Ut vel magna </p>
+                        </div>
+                        <div class="inner-footer">
+                            <a href="./blog-inner.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-5">
+                    <a href="./blog.html" class="ThemeBtn">View All Journal Entries</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-reviews custom-space" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="client-img">
+                        <img src="./Image/agent-list/client-review.png" alt="" class="main-img">
+                        <div class="client-top-review">
+                            <img src="./Image/agent-list/client-star.png" alt="">
+                            <h3>15 k</h3>
+                            <p>Top Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="intHead ">
+                        <h4>Client Reviews</h4>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. </p>
+
+                    
+                    </div>
+
+                    
+
+                    <div class="swiper client-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="client-review-list">
+                                    <img src="./Image/agent-list/client-comment.png" alt="" class="comment-img">
+                                    <div class="review-part">
+                                        <h4>Amazing Honeymoon</h4>
+                                        <img src="./Image/agent-list/client-review-star.png" alt="">
+                                    </div>
+                                    <div class="review-part">
+                                        <p>Paige was amazing! She planned our honeymoon to Bora Bora and we had such a fantastic time! Thanks Paige. We highly recommend!</p>
+                                    </div>
+                                    <div class="review-part name">
+                                        <h4>Tiffany</h4>
+                                        <p>San Diego, CA </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="client-review-list">
+                                    <img src="./Image/agent-list/client-comment.png" alt="" class="comment-img">
+                                    <div class="review-part">
+                                        <h4>Amazing Honeymoon</h4>
+                                        <img src="./Image/agent-list/client-review-star.png" alt="">
+                                    </div>
+                                    <div class="review-part">
+                                        <p>Paige was amazing! She planned our honeymoon to Bora Bora and we had such a fantastic time! Thanks Paige. We highly recommend!</p>
+                                    </div>
+                                    <div class="review-part name">
+                                        <h4>Tiffany</h4>
+                                        <p>San Diego, CA </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="client-review-list">
+                                    <img src="./Image/agent-list/client-comment.png" alt="" class="comment-img">
+                                    <div class="review-part">
+                                        <h4>Amazing Honeymoon</h4>
+                                        <img src="./Image/agent-list/client-review-star.png" alt="">
+                                    </div>
+                                    <div class="review-part">
+                                        <p>Paige was amazing! She planned our honeymoon to Bora Bora and we had such a fantastic time! Thanks Paige. We highly recommend!</p>
+                                    </div>
+                                    <div class="review-part name">
+                                        <h4>Tiffany</h4>
+                                        <p>San Diego, CA </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-nav">
+                            <div class="swiper-button-prev swiper-btn">
+                                <img src="./Image/prev.svg" alt="" class="arrow">
+                            </div>
+                            <div class="swiper-button-next swiper-btn">
+                                <img src="./Image/next.svg" alt="" class="arrow">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <a href="./client-review.html" class="ThemeBtn">Explore all reviews</a>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Inquiry</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                   <div class="row">
+                      <div class="col-lg-6">
+                         <div class="mb-3">
+                            <label for="TextForm" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="TextForm" placeholder="Enter Full Name">
+                         </div>
+                      </div>
+ 
+                      <div class="col-lg-6">
+                         <div class="mb-3">
+                            <label for="EmailForm" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="EmailForm" placeholder="Enter Email">
+                         </div>
+                      </div>
+ 
+                      <div class="col-lg-12">
+                         <div class="mb-3">
+                            <label for="ProblemForm" class="form-label">Inquiry</label>
+                            <textarea class="form-control" id="ProblemForm" rows="5" placeholder="Use this space to tell the Travel Pro about your preferred trip. Include things like the destination, travel dates, type of vacation (cruise, all inclusive, etc.), and any important information you feel they should know before reaching out to you”)"></textarea>
+                         </div>
+                      </div>
+ 
+                      <div class="col-lg-12">
+                         <div class="btn-right text-end">
+                            <button class="ThemeBtn">Submit</button>
+                         </div>
+                      </div>
+                   </div>
+                </form>
+             </div>
+           
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="custom-space supplier-footer overflow-hidden">
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-lg-3 col-md-12">
+                    <div class="about-footer">
+                        <a href="./login-supplier.html" class="ThemeBtn">Login</a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-2     col-6">
+                    <div class="footer-info">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-nav">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./supplier-listing.html">Supplier Directory</a></li>
+                            <li><a href="./events.html">Industry Events</a></li>
+                            <li><a href="./blog.html">Partner Blogs</a></li>
+                            <li><a href="javascript:void(0)">TA Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2     col-6">
+                    <div class="footer-info">
+                        <h5>Our Company</h5>
+                        <ul class="footer-nav">
+                            <li><a href="./about-supplier.html">About Travel Partner Directory</a></li>
+                            <li><a href="./terms-supplier.html">Terms &amp; Conditions</a></li>
+                            <li><a href="privacy-supplier.html">Privacy Policy</a></li>
+                            <li><a href="./report-us.html">Report A Problem</a></li>
+                            <li><a href="./supplier-faq.html">FAQS</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3     col-12">
+                    <div class="footer-info">
+                        <h5>TA Resources</h5>
+                        <ul class="footer-nav">
+                            <li><a href="https://www.traveladvisorresourcecenter.com/">Travel Advisor Resource Center (TARC)</a></li>
+                            <li><a href="https://www.traveladvisorresourcecenter.com/">TA Launchpad</a></li>
+                            <li><a href="https://www.traveladvisorresourcecenter.com/">TA Resource Guide</a></li>
+                            <li><a href="https://www.traveladvisorresourcecenter.com/">Travel Agency Puzzle</a></li>
+                            <li><a href="https://www.traveladvisorresourcecenter.com/">Personalized Travel Guides</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-12 ">
+
+                    <div class="copyright">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./Image/logo.png" alt=""></a>
+                        </div>
+                        <p>© Copyright Travel Advisor Resource Center (TARC) 2024</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <button id="scrollTotop" class="showscroll pulse">
+        <div class="ScrollArrow">
+            <span class="material-symbols-outlined text-light">
+                expand_less
+                </span>
+        </div>
+    </button>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./nice-select/js/jquery.js"></script>
+    <script src="./nice-select/js/jquery.nice-select.js"></script>
+
+   
+    <!-- swiper-js -->
+
+    <script>
+        var swiper = new Swiper(".certificateLogo", {
+            slidesPerView: 8,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                
+                320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        },
+            
+        640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        },
+        768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        },
+        1024: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        },
+        
+    },
+            
+
+        });
+    </script>
+
+    <!--travel swiper-js -->
+   <script>
+    var swiper = new Swiper(".travel-slider", {
+       slidesPerView: 2,
+       spaceBetween: 30,
+
+       pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+       },
+       navigation: {
+          nextEl: ".ts-btn-next",
+          prevEl: ".ts-btn-prev",
+       },
+       breakpoints: {
+
+          320: {
+             slidesPerView: 1,
+             spaceBetween: 10,
+          },
+
+          640: {
+             slidesPerView: 1,
+             spaceBetween: 20,
+          },
+          768: {
+             slidesPerView: 2,
+             spaceBetween: 30,
+          },
+          1024: {
+             slidesPerView: 2,
+             spaceBetween: 40,
+          },
+
+       },
+    });
+ </script>
+
+<!--promotion swiper-js -->
+    <script>
+    var swiper = new Swiper(".PromotionSlider", {
+       slidesPerView: 4,
+       spaceBetween: 30,
+
+       pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+       },
+       navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+       },
+       breakpoints: {
+
+          320: {
+             slidesPerView: 1,
+             spaceBetween: 10,
+          },
+
+          640: {
+             slidesPerView: 1,
+             spaceBetween: 20,
+          },
+          768: {
+             slidesPerView: 2,
+             spaceBetween: 30,
+          },
+          1024: {
+             slidesPerView: 4,
+             spaceBetween: 40,
+          },
+       },
+    });
+    </script>
+
+    <!--client review swiper-js -->
+    <script>
+        var swiper = new Swiper(".client-slider", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+           
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            
+        });
+    </script>
+
+    <!--highlights swiper-js -->
+    <script>
+        var swiper = new Swiper(".highlights", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop:true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                
+                320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+            
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        
+        
+      },
+        });
+    </script>
+            
+
+    <script>
+        $(document).ready(function() {
+         $('select').niceSelect();
+        });
+    </script>
+
+    
+
+
+    <script>
+        // scrollTop
+$(document).ready(function () {
+  $(window).scroll(function () {
+     if ($(this).scrollTop() > 200) {
+        $('#scrollTotop').addClass('showscroll');
+     } else {
+        $('#scrollTotop').removeClass('showscroll');
+     }
+  });
+
+  $('#scrollTotop').click(function () {
+     $(window).scrollTop(0);
+  });
+});
+
+$(function() {  
+  $("body").niceScroll({
+     scrollspeed: 0,
+     smoothscroll: true,
+  });
+});
+    </script>
+
+
+<script>
+    let clickCount = 0;
+    function handleClick() {
+       clickCount++;
+       const callButton = document.querySelector(".callButton");
+       if (clickCount === 1) {
+          callButton.classList.add("show-number");
+       } else if (clickCount === 2) {
+          window.location.href = "tel:123-456-7890";
+       }
+    }
+ </script>
+ <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+ </script>
+
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Travel Advisor</title>
+   <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="../dashboard-pages/css/bootstrap.css">
+   <link rel="stylesheet" href="../css/master.css">
+   <link rel="stylesheet" href="../dashboard-pages/css/master.css">
+   <link rel="stylesheet" href="../dashboard-pages/css/style.css">
+   <link rel="stylesheet" href="../dashboard-pages/css/responsive.css">
+</head>
+
+<body>
+   <div class="mainLayout">
+      <header>
+         <nav class="navbar navbar-expand-lg">
+            <div class="container">
+               <div class="header-nav">
+                  <a class="navbar-brand" href="./index.html">
+                     <img src="../Image/logo.png" alt="">
+                  </a>
+   
+                  <div class="navigation-container">
+                     <div class="navigation">
+                        <button type="button" class="ThemeBtn sidebar-openBtn d-lg-none" onclick="toggleSidebar()">Open Sidebar</button>
+                        <button class="navbar-toggler ToggleButton" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#sideaNav" aria-controls="sideaNav" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                           <div class="nav-overlay" data-bs-toggle="collapse" data-bs-target="#sideaNav"></div>
+                        </button>
+   
+                        <div class="collapse navbar-collapse" id="sideaNav">
+                           <a href="./index.html" class="sidenav-logo d-lg-none">
+                              <img src="./Image/logo.png" alt="">
+                           </a>
+                           <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="../index.html">
+                                    Home
+                                 </a>
+                              </li>
+   
+                              <li class="nav-item">
+                                 <a class="nav-link" href="../travel-listing.html">
+                                    Find A Travel Pro
+                                 </a>
+                              </li>
+   
+                              <li class="nav-item">
+                                 <a class="nav-link" href="../destinations.html">
+                                    Destinations
+                                 </a>
+                              </li>
+   
+                              <li class="nav-item">
+                                 <a class="nav-link" href="../styles.html">
+                                    Styles
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="javascript:void(0)">
+                                    Suppliers
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="../blog.html">
+                                    Insights
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="../faq.html">
+                                    FAQS
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <main>
+         <div class="dashboardLayout">
+            <div class="sidebar" id="sidebar">
+               <div class="dashProfile">
+                  <div class="profileImg">
+                     <img src="./img/profile-img.png" alt="">
+                     <span class="circle-cut"></span>
+                  </div>
+                  <h6>Robert Grant</h6>
+                  <div class="rating-chip">
+                     <span>4.5</span>
+                     <i class="material-icons">star</i>
+                  </div>
+               </div>
+
+               <ul class="sidebar-navs">
+                  <li><a href="./index.html">Dashboard</a></li>
+                  <li><a href="./my-suppliers.html">My Suppliers</a></li>
+                  <li><a href="./supplier-list.html">Supplier List</a></li>
+                  <li><a href="./plans.html">Plans</a></li>
+                  <li><a href="./account-info.html">Account Info</a></li>
+                  <li><a href="./blog.html" class="active">Blogs</a></li>
+               </ul>
+
+               <div class="CommunityBlock">
+                  <ul class="logout-settings">
+                     <li>
+                        <button data-bs-toggle="modal" data-bs-target="#SettingModal">
+                           <i class="material-icons">settings</i>
+                           Settings
+                        </button>
+                     </li>
+
+                     <li>
+                        <a href="https://devfolio.co.in/Travel-Advisor/">
+                           <i class="material-icons">logout</i>
+                           Logout
+                        </a>
+                     </li>
+                  </ul>
+
+                  <div class="CommunityInfo">
+                     <img src="./img/community-img.png" alt="">
+                     <h6>Join Our Community</h6>
+                  </div>
+               </div>
+            </div>
+            <div class="nav-overlay" onclick="toggleSidebar()"></div>
+
+            <div class="content-body">
+               <div class="pageTilte">
+                  <h2>Blogs</h2>
+                  <a href="./add-blog.html" type="button" class="ThemeBtn">
+                     <i class="material-icons">add</i>Add New Blog
+                  </a>
+               </div>
+
+               <div class="row mb-4 gy-4">
+                  <div class="col-lg-3 col-md-6">
+                     <div class="LinkCard h-100">
+                        <h6>Published</h6>
+                        <div class="right-icon">
+                           <h2>500+</h2>
+                           <h6>Blogs</h6>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6">
+                     <div class="LinkCard h-100">
+                        <h6>Private</h6>
+                        <div class="right-icon">
+                           <h2>450</h2>
+                           <h6>Blogs</h6>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                     <div class="row g-3">
+                        <div class="col-lg-4 col-md-4 col-4">
+                           <div class="img-box round15 h-100">
+                              <img src="./img/img1.png" alt="">
+                           </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-4">
+                           <div class="img-box round15 h-100">
+                              <img src="./img/img2.png" alt="">
+                           </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-4">
+                           <div class="img-box round15 h-100">
+                              <img src="./img/img3.png" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="row mb-4 gy-4">
+                  <div class="col-lg-6">
+                     <div class="card h-100">
+                        <div class="card-header">
+                           <h6>Social Media Follow</h6>
+                        </div>
+
+                        <div class="card-body">
+                           <div id="SocialMediaChart"></div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                     <div class="card h-100">
+                        <div class="card-header">
+                           <h6>Recent Blogs</h6>
+                           <a href="../blog.html" class="ThemeBtn btn-sm">View All Blog</a>
+                        </div>
+
+                        <div class="card-body">
+                           <div class="EnquiryGrid">
+                              <div class="EnquiryList">
+                                 <div class="blogThumb">
+                                    <img src="./img/blog-1.png" alt="">
+                                 </div>
+                                 <div class="enqDetails">
+                                    <h6>Did Someone Say Yoga</h6>
+                                    <ul class="callDate-info">
+                                       <li>
+                                          <i class="material-icons">public</i>
+                                          <span>Public</span>
+                                       </li>
+
+                                       <li>
+                                          <i class="material-icons">date_range</i>
+                                          <span>15-04-2024</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+
+                                 <div class="viewEnquiry">
+                                    <a href="../blog-inner.html" type="button" class="IconBtn">
+                                       <i class="material-icons">visibility</i>
+                                    </a>
+
+                                    <a href="./add-blog.html" type="button" class="IconBtn">
+                                       <i class="material-icons">edit</i>
+                                    </a>
+                                 </div>
+                              </div>
+
+                              <div class="EnquiryList">
+                                 <div class="blogThumb">
+                                    <img src="./img/blog-2.png" alt="">
+                                 </div>
+                                 <div class="enqDetails">
+                                    <h6>Did Someone Say Yoga</h6>
+                                    <ul class="callDate-info">
+                                       <li>
+                                          <i class="material-icons">public</i>
+                                          <span>Private</span>
+                                       </li>
+
+                                       <li>
+                                          <i class="material-icons">date_range</i>
+                                          <span>15-04-2024</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+
+                                 <div class="viewEnquiry">
+                                    <a href="../blog-inner.html" type="button" class="IconBtn">
+                                       <i class="material-icons">visibility</i>
+                                    </a>
+
+                                    <a href="./add-blog.html" type="button" class="IconBtn">
+                                       <i class="material-icons">edit</i>
+                                    </a>
+                                 </div>
+                              </div>
+
+                              <div class="EnquiryList">
+                                 <div class="blogThumb">
+                                    <img src="./img/blog-3.png" alt="">
+                                 </div>
+                                 <div class="enqDetails">
+                                    <h6>Did Someone Say Yoga</h6>
+                                    <ul class="callDate-info">
+                                       <li>
+                                          <i class="material-icons">public</i>
+                                          <span>Draft</span>
+                                       </li>
+
+                                       <li>
+                                          <i class="material-icons">date_range</i>
+                                          <span>15-04-2024</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+
+                                 <div class="viewEnquiry">
+                                    <a href="../blog-inner.html" type="button" class="IconBtn">
+                                       <i class="material-icons">visibility</i>
+                                    </a>
+
+                                    <a href="./add-blog.html" type="button" class="IconBtn">
+                                       <i class="material-icons">edit</i>
+                                    </a>
+                                 </div>
+                              </div>
+
+                              <div class="EnquiryList">
+                                 <div class="blogThumb">
+                                    <img src="./img/blog-1.png" alt="">
+                                 </div>
+
+                                 <div class="enqDetails">
+                                    <h6>Did Someone Say Yoga</h6>
+                                    <ul class="callDate-info">
+                                       <li>
+                                          <i class="material-icons">public</i>
+                                          <span>Public</span>
+                                       </li>
+
+                                       <li>
+                                          <i class="material-icons">date_range</i>
+                                          <span>15-04-2024</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+
+                                 <div class="viewEnquiry">
+                                    <a href="../blog-inner.html" type="button" class="IconBtn">
+                                       <i class="material-icons">visibility</i>
+                                    </a>
+
+                                    <a href="./add-blog.html" type="button" class="IconBtn">
+                                       <i class="material-icons">edit</i>
+                                    </a>
+                                 </div>
+                              </div>
+
+                              <div class="EnquiryList">
+                                 <div class="blogThumb">
+                                    <img src="./img/blog-2.png" alt="">
+                                 </div>
+                                 
+                                 <div class="enqDetails">
+                                    <h6>Did Someone Say Yoga</h6>
+                                    <ul class="callDate-info">
+                                       <li>
+                                          <i class="material-icons">public</i>
+                                          <span>Public</span>
+                                       </li>
+
+                                       <li>
+                                          <i class="material-icons">date_range</i>
+                                          <span>15-04-2024</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+
+                                 <div class="viewEnquiry">
+                                    <a href="../blog-inner.html" type="button" class="IconBtn">
+                                       <i class="material-icons">visibility</i>
+                                    </a>
+
+                                    <a href="./add-blog.html" type="button" class="IconBtn">
+                                       <i class="material-icons">edit</i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="card">
+                        <div class="card-header">
+                           <h6>Users in the last 30 days</h6>
+                        </div>
+                        <div class="card-body">
+                           <div id="Last30days"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <footer>
+         <div class="container">
+            <div class="footer-navrow">
+               <div class="footer-navBlock">
+                  <h6>Quick Links</h6>
+                  <ul>
+                     <li><a href="https://devfolio.co.in/travel-supplier/login-advisor.html">Travel Pro Login</a></li>
+                     <li><a href="../travel-listing.html">Find A Travel Pro</a></li>
+                     <li><a href="../destinations.html">Destinations</a></li>
+                     <li><a href="../styles.html">Styles</a></li>
+                     <li><a href="../faq.html">FAQ's</a></li>
+                  </ul>
+               </div>
+   
+               <div class="footer-navBlock">
+                  <h6>Our Company</h6>
+                  <ul>
+                     <li><a href="../report-us.html">Report a Problem</a></li>
+                     <li><a href="../blog.html">Travel Blogs</a></li>
+                     <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                     <li><a href="../terms.html">Terms And Conditions</a></li>
+                  </ul>
+               </div>
+   
+               <div class="footer-navBlock">
+                  <h6>Top Cities</h6>
+                  <ul>
+                     <li><a href="../travel-listing-details.html">Manhattan</a></li>
+                     <li><a href="../travel-listing-details.html">Los Angeles</a></li>
+                     <li><a href="../travel-listing-details.html">Houston</a></li>
+                     <li><a href="../travel-listing-details.html">Chicago</a></li>
+                  </ul>
+               </div>
+   
+               <div class="footer-navBlock">
+                  <h6>Categories</h6>
+                  <ul>
+                     <li><a href="../travel-listing-details.html">Cafe</a></li>
+                     <li><a href="../travel-listing-details.html">Food Restaurant</a></li>
+                     <li><a href="../travel-listing-details.html">Museum Art</a></li>
+                     <li><a href="../travel-listing-details.html">Shopping Mall</a></li>
+                  </ul>
+               </div>
+   
+               <div class="footer-navBlock">
+                  <h6>Top Styles</h6>
+                  <ul>
+                     <li><a href="../travel-listing-details.html">Manhattan</a></li>
+                     <li><a href="../travel-listing-details.html">Los Angeles</a></li>
+                     <li><a href="../travel-listing-details.html">Houston</a></li>
+                     <li><a href="../travel-listing-details.html">Chicago</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+   
+         <div class="brandCopyright">
+            <div class="container">
+               <div class="CopyRight-Info">
+                  <a href="../index.html">
+                     <img src="../Image/logo.png" alt="">
+                  </a>
+                  <p>© Copyright Travel Advisor Resource Center (TARC) 2024</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+
+   <button id="scrollTotop">
+      <div class="ScrollArrow">
+         <i class="material-icons">expand_less</i>
+      </div>
+   </button>
+
+   <!-- Modal -->
+   <div class="modal fade" id="SettingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="SettingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Change Password</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row gy-4">
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <label>Old Password</label>
+                        <input type="text" name="" id="" class="form-control">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <label>New Password</label>
+                        <input type="text" name="" id="" class="form-control">
+                        <div class="passwordIndicator-block">
+                           <div class="password-indicator">
+                              <span class="active"></span>
+                              <span></span>
+                              <span></span>
+                           </div>
+                           <p>Weak</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="text" name="" id="" class="form-control">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                     <div class="form-group">
+                        <button type="button" class="ThemeBtn">Save Password</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+   <script src="../dashboard-pages/js/bootstrap.js"></script>
+   <script src="../js/header.js"></script>
+   <script src="../dashboard-pages/js/main.js"></script>
+
+   <!-- Chart -->
+
+   <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+   <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+   <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+   <script src="../dashboard-pages/js/SocialMediaChart.js"></script>
+   <script src="../dashboard-pages/js/last30days.js"></script>
+</body>
+
+</html>
